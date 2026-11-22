@@ -1,0 +1,13 @@
+{
+  "fields": [
+    "id",
+    "version",
+    "subject",
+    "source",
+    "observedAt",
+    "status",
+    "value"
+  ],
+  "encoding": "UTF-8 JSON",
+  "missing": "空值表示尚未提供"
+}

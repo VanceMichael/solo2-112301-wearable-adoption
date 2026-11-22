@@ -1,0 +1,14 @@
+{
+  "name": "analysis-materials-wearable-adoption",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "22.23.4"
+  },
+  "scripts": {
+    "build": "node --check tools/verify-materials.mjs",
+    "test": "node --test",
+    "check:materials": "node tools/verify-materials.mjs"
+  }
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "wearable-adoption-a",
+    "version": "v1",
+    "subject": "S1",
+    "source": "source-a",
+    "observedAt": "2026-11-01T08:00:00Z",
+    "status": "valid",
+    "value": 12
+  },
+  {
+    "id": "wearable-adoption-b",
+    "version": "v1",
+    "subject": "S1",
+    "source": "source-b",
+    "observedAt": "2026-11-01T09:00:00Z",
+    "status": "partial",
+    "value": 9
+  },
+  {
+    "id": "wearable-adoption-c",
+    "version": "v2",
+    "subject": "S2",
+    "source": "source-a",
+    "observedAt": "2026-11-02T08:00:00Z",
+    "status": "valid",
+    "value": 15
+  }
+]
