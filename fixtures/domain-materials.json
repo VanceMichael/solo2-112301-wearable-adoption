@@ -1,0 +1,175 @@
+{
+  "title": "穿戴渠道替代、服务留存和套餐资格",
+  "source_note": "本文件中的机构、事件、规则和数值均为人工构造的本地合成资料。",
+  "contract": "ownership 包含实名外部系统已经分配的虚构人号及实际用设备的生效时刻。service 的 action 可被一项服务的多端同时上报。capability 给形态支持的服务和观测起点。touch 的 share 对应该方案的合约份额，同一方案的份额合计 1。payout 的 confirmed 表示银行已确认，额度和留存口径见 plan。按 UTC 日计算。",
+  "tables": {
+    "ownership": [
+      {
+        "device": "W1",
+        "form": "watch",
+        "person": "P1",
+        "effective_at": "2026-08-01"
+      },
+      {
+        "device": "R1",
+        "form": "ring",
+        "person": "P1",
+        "effective_at": "2026-08-03"
+      },
+      {
+        "device": "R1",
+        "form": "ring",
+        "person": "P2",
+        "effective_at": "2026-08-18"
+      },
+      {
+        "device": "E1",
+        "form": "ear",
+        "person": "P3",
+        "effective_at": "2026-08-04"
+      },
+      {
+        "device": "W2",
+        "form": "watch",
+        "person": "P4",
+        "effective_at": "2026-08-02"
+      }
+    ],
+    "capability": [
+      {
+        "form": "watch",
+        "service": "sleep",
+        "observable_from": "2026-08-01"
+      },
+      {
+        "form": "ring",
+        "service": "sleep",
+        "observable_from": "2026-08-03"
+      },
+      {
+        "form": "ear",
+        "service": "sleep",
+        "observable_from": "2026-09-01"
+      }
+    ],
+    "service": [
+      {
+        "action": "A1",
+        "device": "W1",
+        "service": "sleep",
+        "day": "2026-08-05"
+      },
+      {
+        "action": "A1",
+        "device": "R1",
+        "service": "sleep",
+        "day": "2026-08-05"
+      },
+      {
+        "action": "A2",
+        "device": "W2",
+        "service": "sleep",
+        "day": "2026-08-06"
+      },
+      {
+        "action": "A3",
+        "device": "R1",
+        "service": "sleep",
+        "day": "2026-08-19"
+      },
+      {
+        "action": "A4",
+        "device": "R1",
+        "service": "sleep",
+        "day": "2026-08-25"
+      },
+      {
+        "action": "A5",
+        "device": "W1",
+        "service": "sleep",
+        "day": "2026-08-26"
+      },
+      {
+        "action": "A6",
+        "device": "W2",
+        "service": "sleep",
+        "day": "2026-08-26"
+      }
+    ],
+    "touch": [
+      {
+        "person": "P1",
+        "plan": "T1",
+        "channel": "shop",
+        "share": "0.6",
+        "day": "2026-08-03"
+      },
+      {
+        "person": "P1",
+        "plan": "T1",
+        "channel": "web",
+        "share": "0.4",
+        "day": "2026-08-03"
+      },
+      {
+        "person": "P1",
+        "plan": "T2",
+        "channel": "retail",
+        "share": "1",
+        "day": "2026-08-04"
+      },
+      {
+        "person": "P2",
+        "plan": "T1",
+        "channel": "web",
+        "share": "1",
+        "day": "2026-08-18"
+      },
+      {
+        "person": "P4",
+        "plan": "T2",
+        "channel": "retail",
+        "share": "1",
+        "day": "2026-08-02"
+      }
+    ],
+    "plan": [
+      {
+        "id": "T1",
+        "amount": "12",
+        "min_active_days": "2",
+        "week_start": "0",
+        "week_end": "28",
+        "eligible_from": "2026-08-01",
+        "eligible_to": "2026-09-01"
+      },
+      {
+        "id": "T2",
+        "amount": "10",
+        "min_active_days": "2",
+        "week_start": "0",
+        "week_end": "28",
+        "eligible_from": "2026-08-01",
+        "eligible_to": "2026-09-01"
+      }
+    ],
+    "payout": [
+      {
+        "id": "L1",
+        "person": "P1",
+        "plan": "T1",
+        "channel": "shop",
+        "amount": "7.2",
+        "state": "confirmed"
+      },
+      {
+        "id": "L2",
+        "person": "P1",
+        "plan": "T1",
+        "channel": "web",
+        "amount": "4.8",
+        "state": "held"
+      }
+    ]
+  }
+}
